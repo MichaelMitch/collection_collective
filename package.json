@@ -19,19 +19,19 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
+    "nodemon": "^1.14.11",
     "react": "^16.4.1",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.3.1",
+    "supertest": "^3.0.0",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
-    "nodemon": "^1.14.11",
-    "supertest": "^3.0.0"
+    "webpack-dev-server": "^2.11.1"
   },
-
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "knex": "^0.14.6"
+    "knex": "^0.14.6",
+    "sqlite3": "^4.0.0"
   }
 }
