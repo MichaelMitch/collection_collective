@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
       table.increments('id')
       table.number('artist_id')
       table.string('name')
-      table.string('genre')
+      table.string('genre_id')
       table.number('length')
       
   })
