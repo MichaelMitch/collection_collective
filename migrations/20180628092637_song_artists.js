@@ -1,5 +1,5 @@
 exports.up = function (knex, Promise) {
-  return knex.schema.makeTable('song_artists', function (table) {
+  return knex.schema.createTable('song_artists', table => {
     table.increments('id')
     table.string('name')
   })

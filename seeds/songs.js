@@ -1,9 +1,9 @@
 exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('songs').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('songs').insert([
         {id: 1, mix_id: 1, title: 'Si t\'es mal dans ta peau', artist: 1, genre_id: 4},
         {id: 2, mix_id: 2, title: 'Descarga', artist: 2, genre_id: 4},
         {id: 3, mix_id: 2, title: 'Here We Go Again', artist: 3, genre_id: 5},

@@ -1,10 +1,10 @@
 exports.up = function (knex, Promise) {
-  return knex.schema.makeTable('genre', function (table) {
-    table.increment('id')
+  return knex.schema.createTable('genre', table => {
+    table.increments('id')
     table.string('name')
   })
 }
 
 exports.down = function (knex, Promise) {
-  return knex.schema.dropTable('song_artists')
+  return knex.schema.dropTable('genre')
 }

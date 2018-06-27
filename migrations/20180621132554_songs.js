@@ -1,7 +1,7 @@
 exports.up = function (knex, Promise) {
-  return knex.schema.createTable('songs', function (table) {
+  return knex.schema.createTable('songs', table => {
     table.increments('id')
-    table.number('mix_id')
+    table.integer('mix_id')
     table.string('Title')
     table.string('artist')
     table.string('genre_id')
@@ -9,5 +9,5 @@ exports.up = function (knex, Promise) {
 }
 
 exports.down = function (knex, Promise) {
-  return knex.schema.dropTable('song_artists')
+  return knex.schema.dropTable('songs')
 }
