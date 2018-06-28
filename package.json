@@ -1,14 +1,20 @@
 {
   "name": "EDA_Boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "repository": "https://github.com/MichaelMitch/EDA_Boilerplate.git",
   "author": "MichaelMitch <michael.j.mitchelson@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack && node server",
-    "dev": "node server & webpack --watch",
+    "dev": "nodemon --watch server & yarn build --watch",
+    "build": "webpack --config ./client/webpack.config.js",
     "test": "jest --watchAll"
+  },
+  "babel": {
+    "presets":[
+      "env",
+      "react"
+    ]
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -25,6 +31,7 @@
     "webpack": "^4.12.2"
   },
   "devDependencies": {
+    "@webpack-cli/init": "^0.0.8",
     "nodemon": "^1.17.5",
     "webpack-cli": "^3.0.8"
   }

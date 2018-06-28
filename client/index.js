@@ -1,10 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDom from 'react-dom'
 
 import App from './components/App'
 
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
+document.addEventListener('DOMContentLoaded', function () {
+  ReactDom.render(
     <App />,
     document.getElementById('app')
   )
