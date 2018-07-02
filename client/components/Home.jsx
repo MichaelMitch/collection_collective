@@ -13,6 +13,7 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
   return ( 
     <div className ="home">
       <h1> Collection Collective </h1> 
+      <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
     </div>
   )
   }
