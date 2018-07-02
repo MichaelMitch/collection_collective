@@ -1,0 +1,33 @@
+* {
+  /* border: 1px solid red; */
+  font-family: 'Lato', sans-serif;
+}
+
+.mainPage{
+  text-align: center;
+  color: whitesmoke;
+}
+.background{
+  background-color: rgb(70, 66, 65)
+}
+
+/* Intro Page */
+.titlePg-title{
+  font-size: 150px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.titlePg-intro{
+  font-size: 30px
+}
+#titlePg-Btn{
+  width: 100px;
+  height: 50px;
+  background-color: darkred;
+  color: whitesmoke;
+  font-size: 30px
+}
+
+/*  */
+
+/*  */
