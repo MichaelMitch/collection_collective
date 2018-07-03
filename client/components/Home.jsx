@@ -5,15 +5,20 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
   constructor(props) {
     super(props)
     this.state = {
-      placehold: 'hello'
+      placehold: ''
     }
   }
   
   render(){
   return ( 
-    <div className ="home">
-      <h1> Collection Collective </h1> 
+    <div className ="Home">
       <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
+      <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
+      <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
+      <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
+      <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
+      <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
+
     </div>
   )
   }
