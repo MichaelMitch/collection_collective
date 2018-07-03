@@ -13,7 +13,7 @@ import {getMixes} from "../api/apiClient"
 
     }
   }
-  setPeople(){
+  setMixes(){
     return getMixes()
     .then(mixes => {
       this.setState({mixes: mixes.mixes})
@@ -27,7 +27,7 @@ import {getMixes} from "../api/apiClient"
     <div className ="MixPage">
       <h2> Collection Collective </h2>
       <h3> Mixes </h3>
-      {this.props.mixes.map(function (mix) {
+      {this.state.mixes.map(function (mix) {
             return <Mix mix={mix}/>
           })}      
     </div>
