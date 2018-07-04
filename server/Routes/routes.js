@@ -12,10 +12,15 @@ router.get('/', (req, res) => {
   })
 })
 
-router.get('mix', (req, res) => {
-  
-
-
+router.get('/:id', (req, res) => {
+  id = req.params.id
+  db.getSongs(id)
+  .then(resp => {
+    res.json(resp)
+  })
+  .catch(err => {
+    res.status(500).send('Database error: ' + err.message)
+  })
 })
 
 

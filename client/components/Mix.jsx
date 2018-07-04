@@ -4,8 +4,8 @@ const Mixes = ({mix}) => {
 
   return(
     <div>
-  <button> {mix.title} {mix.artist} </button>
-  </div>)
+      <button> {mix.title} {mix.artist} </button>
+    </div>)
 
 
 }

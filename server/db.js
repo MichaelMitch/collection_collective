@@ -13,3 +13,9 @@ function getMixes() {
   .select()
 
 }
+
+function getMix(id){
+  const db = knex
+  return db('songs')
+  .where('songs.mix_id' === id)
+}
