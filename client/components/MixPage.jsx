@@ -29,9 +29,7 @@ import {getMixes} from "../api/apiClient"
     <div className ="MixPage">
       <h2> Collection Collective </h2>
       <h3> Mixes </h3>
-      {this.state.mixes.map(mix => {
-            return <Mix mix={mix}/>
-          })}      
+      {this.state.mixes.map(mix => {return <Mix key={mix.id} mix={mix}/>})}      
     </div>
 
   )

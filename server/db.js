@@ -8,6 +8,7 @@ module.exports = {
 
 function getMixes() {
   const db = knex
+  // console.log(db('mixes'))
   return db('mixes')
   .select()
 
