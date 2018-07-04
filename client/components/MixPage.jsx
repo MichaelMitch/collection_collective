@@ -9,25 +9,27 @@ import {getMixes} from "../api/apiClient"
   constructor(props) {
     super(props)
     this.state = {
-      mixes: [],
-
+      mixes: []
     }
+    this.setMixes = this.setMixes.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
   }
   setMixes(){
     return getMixes()
     .then(mixes => {
-      this.setState({mixes: mixes.mixes})
+      this.setState({mixes})
     })
   }
   componentDidMount(){
     this.setMixes()
   }
   render(){
-  return (
+    const mixes = this.state.mixes
+  return (    
     <div className ="MixPage">
       <h2> Collection Collective </h2>
       <h3> Mixes </h3>
-      {this.state.mixes.map(function (mix) {
+      {this.state.mixes.map(mix => {
             return <Mix mix={mix}/>
           })}      
     </div>

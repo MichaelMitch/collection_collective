@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "$/Volumes/Mac/collection_collective/server/index.js"
+      "program": "${workspaceFolder}/server/index.js"
     }
   ]
 }
