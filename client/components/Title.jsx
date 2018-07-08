@@ -1,7 +1,6 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Home from './Home'
-import MixPage from './MixPage'
  class App extends React.Component {
   constructor(props) {
     super(props)
@@ -13,8 +12,10 @@ import MixPage from './MixPage'
   render(){
   return (
     <div className ="app">
-      <Route 
-      <MixPage />
+      <h1 className="titlePg-title mainPage"> Collection Collective </h1>
+      <p className="titlePg-intro mainPage"> Find those hard to ID tracks in your favourite DJ sets, mixes, or podcasts </p>
+      <Link to='Home'><button id="titlePg-Btn"> Enter </button></Link>
+      <Route path="Home" Component="Home"/>
     </div>
 
   )

@@ -5,7 +5,7 @@ import {HashRouter as Router} from 'react-router-dom'
 import App from './components/App'
 document.addEventListener('DOMContentLoaded', () => {
   ReactDom.render(
-    <Router>
+    <Router basename="Collection_Collective">
       <div>
         <App />
       </div>
