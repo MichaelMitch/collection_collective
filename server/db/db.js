@@ -1,21 +1,21 @@
 const path = require('path')
-const config = require(path.join('/Users/eda/Desktop/collection_collective/collection_collective/knexfile.js')).development
+const config = require('./knexfile').development
 const knex = require('knex')(config)
 
 module.exports = {
- getMixes
+  getMixes,
+  getMix
 }
 
-function getMixes() {
+function getMixes () {
   const db = knex
   // console.log(db('mixes'))
   return db('mixes')
-  .select()
-
+    .select()
 }
 
-function getMix(id){
+function getMix (id) {
   const db = knex
   return db('songs')
-  .where('songs.mix_id' === id)
+    .where(id === 'songs.mix_id')
 }
