@@ -1,21 +1,17 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+import {Route} from 'react-router'
+
+import Title from './Title'
 import Home from './Home'
-import MixPage from './MixPage'
 class App extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      placehold: 'hello'
-    }
-  }
+
 
   render () {
     return (
-      <div className ="app">
-        <MixPage />
+      <div className ='app'>
+        <Route exact path= '/' component={Title} />
+        <Route exact path='/Home' component={Home}/>
       </div>
-
     )
   }
 }
