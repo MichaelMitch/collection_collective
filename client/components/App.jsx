@@ -1,7 +1,8 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import Title from './Title'
-import Home from './Home'
+import Launch from './Launch'
+import Header from './Header'
+import Mixes from './Mixes'
  class App extends React.Component {
   constructor(props) {
     super(props)
@@ -13,8 +14,9 @@ import Home from './Home'
   render(){
   return (
     <div className ="app">
-      <Route exact path="/" component={Title}/>
-      <Route exact path="/home" component={Home}/>
+      <Route path="/" component={Header}/>
+      <Route exact path="/" component={Launch}/>
+      <Route path="/Mixes" component={Mixes}/>
     </div>
     
   )

@@ -3,7 +3,7 @@ import {connect} from "react-redux"
 
 import {getMixes} from '../actions/mixes'
 
- class Home extends React.Component {
+ class Mixes extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => {
     mixInfo: state.mixInfo
   }
 }
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps)(Mixes)
