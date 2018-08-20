@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --watch server & yarn build --watch",
+    "knex": "knex --knexfile ./server/db/knexfile.js",
     "build": "webpack --config ./client/webpack.config.js",
     "test": "jest --watchAll"
   },
@@ -17,23 +18,31 @@
     ]
   },
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "express": "^4.16.3",
-    "knex": "^0.14.6",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "redux": "^4.0.0",
-    "sqlite3": "^4.0.1",
-    "superagent": "^3.8.3",
-    "webpack": "^4.12.2",
-    "webpack-dev-server": "^3.1.4"
+    "express": "^4.16.2",
+    "jsdom": "^11.11.0",
+    "knex": "^0.15.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5",
-    "webpack-cli": "^3.0.8"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.4.1",
+    "nodemon": "^1.14.12",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^3.7.2",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.2.0",
+    "sqlite3": "^4.0.1",
+    "superagent": "^3.8.2",
+    "supertest": "^3.0.0",
+    "webpack": "^3.11.0"
   }
 }

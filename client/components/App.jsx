@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
 import Title from './Title'
-import Home from './Home'
+import home from './home'
  class App extends React.Component {
   constructor(props) {
     super(props)
@@ -14,7 +14,7 @@ import Home from './Home'
   return (
     <div className ="app">
       <Route exact path="/" component={Title}/>
-      <Route exact path="/home" component={Home}/>
+      <Route exact path="/home" component={home}/>
     </div>
     
   )
