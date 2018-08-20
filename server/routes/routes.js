@@ -2,7 +2,7 @@ const express = require('express')
 const db = require("../db/db")
 const router = express.Router()
 
-router.get('/home', (req, res) => {
+router.get('/mixes', (req, res) => {
   db.getMixes()
   .then(resp =>{
     res.json(resp)

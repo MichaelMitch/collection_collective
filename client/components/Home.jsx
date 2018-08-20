@@ -1,7 +1,7 @@
 import React from 'react'
-import {HashRouter as Router, Route, Switch} from 'react-router-dom'
+import {connect} from "react-redux"
 
- class home extends React.Component {
+ class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -20,5 +20,9 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
   )
   }
 }
-
-export default home
+const mapStateToProps = (state) => {
+  return {
+    mixInfo: state.mixInfo
+  }
+}
+export default connect(mapStateToProps)(Home)
