@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 
-const mainRoutes = require('./Routes/routes')
+const mainRoutes = require('./routes/routes')
 
 const server = express()
 
