@@ -11,7 +11,7 @@ export const requestMixesInfo = () => {
     }
 }
 
-export const recieveMixesInfo = () => {
+export const recieveMixesInfo = (mixesInfo) => {
     return {
         type: RECIEVE_MIXES_INFO,
         mixesInfo

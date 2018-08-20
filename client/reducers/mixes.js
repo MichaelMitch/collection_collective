@@ -4,7 +4,7 @@ import {RECIEVE_MIXES_INFO} from '../actions/mixes'
 function mixesInfo (state = {}, action) {
     switch (action.type) {
       case RECIEVE_MIXES_INFO:
-        return action.mixesInfo
+        return mixesInfo = action.mixesInfo
   
       default:
         return state

@@ -1,6 +1,8 @@
 import React from 'react'
 import {connect} from "react-redux"
 
+import {getMixes} from '../actions/mixes'
+
  class Home extends React.Component {
   constructor(props) {
     super(props)
@@ -9,7 +11,7 @@ import {connect} from "react-redux"
     }
   }
   componentDidMount(){
-    
+    this.props.dispatch(getMixes())
   }
 
   render(){
