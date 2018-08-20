@@ -18,7 +18,6 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
       <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
       <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
       <p>rerngerk.jnsjkv ,rv,ksjnvreksjnvernvoqbjv.kj</p>
-
     </div>
   )
   }

@@ -1,15 +1,13 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import {HashRouter as Router} from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 import App from './components/App'
 document.addEventListener('DOMContentLoaded', () => {
   ReactDom.render(
-    <Router basename="Collection_Collective">
-      <div>
+    <HashRouter>
         <App />
-      </div>
-    </Router>,
+    </HashRouter>,
     document.getElementById('app')
   )
 })

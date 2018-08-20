@@ -1,7 +1,8 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 import Home from './Home'
- class App extends React.Component {
+
+ class Title extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -11,15 +12,14 @@ import Home from './Home'
   
   render(){
   return (
-    <div className ="app">
+    <div className ="Title">
       <h1 className="titlePg-title mainPage"> Collection Collective </h1>
       <p className="titlePg-intro mainPage"> Find those hard to ID tracks in your favourite DJ sets, mixes, or podcasts </p>
-      <Link to='Home'><button id="titlePg-Btn"> Enter </button></Link>
-      <Route path="Home" Component="Home"/>
+      <div className="titlePg-Btn"> <Link to='Home'><button className="titlePg-Btn" > Enter </button></Link> </div>
     </div>
 
   )
   }
 }
 
-export default App
+export default Title
