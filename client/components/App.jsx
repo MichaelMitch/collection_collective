@@ -2,7 +2,7 @@ import React from 'react'
 import {Route} from 'react-router-dom'
 import Launch from './Launch'
 import Header from './Header'
-import Mixes from './Mixes'
+import Mixes from './MixPage/Mixes'
  class App extends React.Component {
   constructor(props) {
     super(props)

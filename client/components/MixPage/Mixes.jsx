@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from "react-redux"
 
-import {getMixes} from '../actions/mixes'
+import {getMixes} from '../../actions/mixes'
 
  class Mixes extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ import {getMixes} from '../actions/mixes'
 
   render(){
   return ( 
-    <div className ="home">
+    <div className ="mixes">
       
     </div>
   )

@@ -10,6 +10,8 @@ function getMixes() {
   const db = knex
   // console.log(db('mixes'))
   return db('mixes')
+  .join('mix_artists', 'mix_artists.id', 'mixes.artist_id' )
+
   .select()
 }
 
