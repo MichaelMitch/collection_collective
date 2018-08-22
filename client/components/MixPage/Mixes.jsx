@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from "react-redux"
 
 import {getMixes} from '../../actions/mixes'
-
+import Mix from './Mix'
  class Mixes extends React.Component {
   constructor(props) {
     super(props)
@@ -17,14 +17,23 @@ import {getMixes} from '../../actions/mixes'
   render(){
   return ( 
     <div className ="mixes">
-      
+      {this.props.mixInfo.map(mix => {
+        return <Mix key={mix.id} title={mix.title} artist={mix.name} date={mix.date} length={mix.length}> </Mix>
+      })}
     </div>
   )
   }
 }
 const mapStateToProps = (state) => {
-  return {
-    mixInfo: state.mixInfo
+  if (state.mixInfo === undefined ){
+    return {
+      mixInfo: []
+    }
   }
+    else{
+      return {
+      mixInfo: state.mixInfo
+    }
+}
 }
 export default connect(mapStateToProps)(Mixes)
