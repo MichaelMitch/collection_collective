@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Mixes = ({mix}) => {
+const Mix = (props) => {
 
   return(
     <div>
-    <h3>{this.props.title}</h3>
-      <p>hello</p>
+    <h3>{props.title}</h3>
+      
     </div>)
 
 
 }
 
-export default Mixes
+export default Mix

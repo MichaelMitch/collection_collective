@@ -4,12 +4,7 @@ import {connect} from "react-redux"
 import {getMixes} from '../../actions/mixes'
 import Mix from './Mix'
  class Mixes extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      placehold: ''
-    }
-  }
+
   componentDidMount(){
     this.props.dispatch(getMixes())
   }
@@ -25,14 +20,14 @@ import Mix from './Mix'
   }
 }
 const mapStateToProps = (state) => {
-  if (state.mixInfo === undefined ){
+  if (state.getMixes.length === undefined ){
     return {
       mixInfo: []
     }
   }
     else{
       return {
-      mixInfo: state.mixInfo
+      mixInfo: state.getMixes
     }
 }
 }
