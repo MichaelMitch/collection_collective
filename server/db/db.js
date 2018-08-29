@@ -11,6 +11,8 @@ function getMixes() {
   // console.log(db('mixes'))
   return db('mixes')
   .join('mix_artists', 'mix_artists.id', 'mixes.artist_id' )
+  .join('genre', 'genre.id', 'mixes.genre_id')
+  .select('title', 'date', 'length', 'artist_name as artistName', 'genre')
 
   .select()
 }
