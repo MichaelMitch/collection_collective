@@ -6,10 +6,10 @@ const Header = () => {
 
     return(
         <div className="header">
-            <h3>Collection Collective</h3>
-            <Link to="/Home"> Home </Link>
-            <SearchBar/>
-            <Link to="/AddMix"> Add </Link>
+            <h3 className=" header-title">Collection Collective</h3>
+            <Link to="/Home" className="header-child header-element"> Home </Link>
+            <Link to="/AddMix" className="header-child header-element"> Add </Link>
+            <SearchBar className="header-child"/>
         </div>
     )
 

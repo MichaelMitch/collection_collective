@@ -3,9 +3,10 @@ import React from 'react'
 const Mix = (props) => {
 
   return(
-    <div>
-    <h3>{props.title}</h3>
-      
+    <div className ="mix">
+    <h3 className="mixInfo">{props.title}</h3>
+    <h4 className="mixInfo">Artist: {props.artist}</h4>
+    <h4 className="mixInfo">Date: {props.date}</h4>
     </div>)
 
 

@@ -11,10 +11,13 @@ import Mix from './Mix'
 
   render(){
   return ( 
-    <div className ="mixes">
-      {this.props.mixInfo.map(mix => {
-        return <Mix key={mix.id} title={mix.title} artist={mix.name} date={mix.date} length={mix.length}> </Mix>
-      })}
+    <div>
+      <h3 className="header-title"> Latest Mixes </h3>
+      <div className="mixPageBody">
+        {this.props.mixInfo.map(mix => {
+          return <Mix key={mix.id} title={mix.title} artist={mix.name} date={mix.date} length={mix.length}> </Mix>
+        })}
+      </div>
     </div>
   )
   }
