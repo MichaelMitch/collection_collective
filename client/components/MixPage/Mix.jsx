@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-class MixPage extends React.Component {
+class Mix extends React.Component {
 
 
   render(){
@@ -13,4 +13,4 @@ class MixPage extends React.Component {
 
 
 }
-export default MixPage
+export default Mix
