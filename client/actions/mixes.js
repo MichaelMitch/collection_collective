@@ -31,3 +31,9 @@ export const getMixes = () => {
           })
     }
 }
+
+export const addMix = () =>{
+    return (dispatch) => {
+        
+    }
+}

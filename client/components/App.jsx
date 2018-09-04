@@ -4,6 +4,7 @@ import Launch from './Launch'
 import Header from './Header'
 import Mixes from './MixesPage/Mixes'
 import MixPage from './MixPage/Mix'
+import AddMix from './AddMix/AddMix'
  class App extends React.Component {
   constructor(props) {
     super(props)
@@ -19,6 +20,7 @@ import MixPage from './MixPage/Mix'
       <Route exact path="/" component={Launch}/>
       <Route exact path="/Mixes" component={Mixes}/>
       <Route path="/Mixes/:id" component={MixPage}/>
+      <Route path="/AddMix" component={AddMix}/>
     </div>
     
   )
