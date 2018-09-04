@@ -32,8 +32,13 @@ export const getMixes = () => {
     }
 }
 
-export const addMix = () =>{
+export const addMix = (mix) =>{
     return (dispatch) => {
-        
+        return(request)
+        .post('/api/v1/site/addMix')
+        .send(mix)
+        .then(res => {
+            dispatch(requestMixInfo(res.body.mix))
+        })
     }
 }
